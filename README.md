@@ -1,1 +1,1 @@
-# coworkingAI
+scripts padrões para agentes
