@@ -1,53 +1,51 @@
-# CONTEXTO.MD — Documento de Momento Atual
+# 📄 CONTEXTO.md — Contexto Obrigatório para Agentes de IA
 
-> Este arquivo é **obrigatório** para qualquer trabalho com IA neste projeto.
-> Sem ele preenchido, nenhuma decisão técnica será tomada.
-> Mantenha-o atualizado sempre que o projeto mudar de estágio ou direção.
+> ⚠️ **OBRIGATÓRIO**: Este arquivo deve ser lido antes de qualquer decisão técnica.
+> Sem ele preenchido, **nenhuma sugestão de arquitetura, código ou infra deve ser feita**.
+>  
+> Atualize sempre que houver mudança de escopo, estágio ou stack.
 
 ---
 
 ## 1. Identificação do Projeto
 
-- **Nome:** 
-- **Descrição curta:** 
+- **Nome:**  
+- **Descrição curta:**  
 
 ---
 
 ## 2. Estágio Atual
 
-> Marque o estágio atual do projeto.
+> Marque **apenas um**. Define o nível de rigor técnico esperado.
 
-- [ ] Teste / Exploração (validando uma ideia, sem compromisso de continuidade)
-- [ ] MVP (produto mínimo viável, caminho para validação real)
-- [ ] Produção (sistema em uso real por usuários)
-- [ ] Escalando (crescimento ativo, alta demanda ou múltiplos times)
+- [ ] Teste / Exploração (validar ideia rápido, sem compromisso)
+- [ ] MVP (estrutura mínima para validar com usuários)
+- [ ] Produção (uso real, exige qualidade e estabilidade)
+- [ ] Escalando (alto volume, performance e times múltiplos)
 
 ---
 
 ## 3. Estágio Final Esperado
 
-> Para onde este projeto deve evoluir? Isso guia decisões de arquitetura hoje.
+> Define o nível de complexidade que pode ser antecipado.
 
-- [ ] Permanece simples / interno (script, ferramenta pessoal, automação)
-- [ ] Produto SaaS / Web App público
-- [ ] API de consumo interno ou externo
-- [ ] Sistema de alta escala / multi-tenant
-- [ ] Indefinido por ora
+- [ ] Simples / interno (script ou ferramenta pessoal)
+- [ ] SaaS / Web App público
+- [ ] API (interna ou externa)
+- [ ] Sistema escalável / multi-tenant
+- [ ] Indefinido
 
-**Observações:**
-
+**Observações:**  
 
 ---
 
 ## 4. Possíveis Mudanças Futuras
 
-> Liste features, integrações ou mudanças de escopo que são **prováveis ou planejadas**.
-> Isso permite que a IA avalie se vale antecipar estrutura agora ou manter simples.
+> Liste apenas mudanças **prováveis** (evite especulação inútil).
 
-| Mudança | Probabilidade | Prazo estimado |
+| Mudança | Probabilidade | Prazo |
 |---|---|---|
-| Ex: Adicionar multitenancy | Alta | 2 meses |
-| Ex: Integrar pagamento | Média | Indefinido |
+| | | |
 | | | |
 | | | |
 
@@ -55,46 +53,68 @@
 
 ## 5. Ambiente
 
-- **Desenvolvimento:** 
-- **Deploy / Produção:** 
+> Onde o sistema roda.
 
-Exemplos: Local, Docker, Railway, AWS, GCP, Kubernetes, Vercel, etc.
+- **Desenvolvimento:**  
+- **Deploy / Produção:**  
 
 ---
 
 ## 6. Objetivos de Negócio
 
-**Curto prazo (próximas semanas):**
+> Direciona decisões técnicas (sem isso, arquitetura vira chute).
 
-
-**Médio prazo (próximos meses):**
-
+- **Curto prazo (semanas):**  
+- **Médio prazo (meses):**  
 
 ---
 
 ## 7. Stack Atual
 
-> Preencha conforme o projeto for evoluindo. A IA usará isso para sugestões alinhadas.
+> Se estiver migrando algo, use:  
+> `[Antigo] -> [Novo]`
 
-| Camada | Tecnologia escolhida |
+| Camada | Tecnologia |
 |---|---|
 | Linguagem principal | |
-| Framework web | |
+| Framework | |
 | Banco de dados | |
-| ORM / Query builder | |
+| ORM / Query | |
 | Autenticação | |
 | Fila / Jobs | |
 | Infra / Deploy | |
 | Testes | |
-| Outras libs relevantes | |
+| Outras libs | |
 
 ---
 
-## 8. Restrições e Decisões já Tomadas
+## 8. Restrições e Decisões Fixas
 
-> O que **não** pode ser mudado? Decisões já fechadas que a IA deve respeitar.
+> O que **não pode ser mudado** ou já foi decidido.
 
+-  
+-  
+-  
 
 ---
 
-**Última atualização:** ____/____/________
+## 9. Histórico de Decisões (Log)
+
+> Nunca apagar. Isso evita decisões incoerentes no futuro.
+
+Formato:
+```
+[Data] - [Decisão] - [Motivo]
+```
+
+---
+
+## 10. Regras para Agentes de IA
+
+> Qualquer IA trabalhando neste repositório deve seguir:
+
+- Não assumir contexto ausente  
+- Não inventar requisitos ou decisões  
+- Questionar inconsistências antes de sugerir soluções  
+- Respeitar estágio do projeto (não over-engineer MVP)  
+- Priorizar simplicidade proporcional ao problema  
