@@ -117,4 +117,11 @@ Formato:
 - Não inventar requisitos ou decisões  
 - Questionar inconsistências antes de sugerir soluções  
 - Respeitar estágio do projeto (não over-engineer MVP)  
-- Priorizar simplicidade proporcional ao problema  
+
+---
+
+## 11. Hardware atual
+
+> Qual Hardware estamos:
+
+- Descreve-lo
