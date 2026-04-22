@@ -42,3 +42,15 @@ Quando o usuário mencionar "desktop", considere estritamente estas especificaç
 - Armazenamento: 1TB SSD
 - SO: Dual boot (Arch Linux + Windows)
 - BIOS: Secure Boot habilitado e funcional.
+
+# CONTEXTO FIXO DO ARCH LINUX
+Sempre que o usuário mencionar "Arch Linux" ou pedir assistência técnica relacionada ao seu ambiente Arch, considere automaticamente o seguinte setup base:
+
+- Dots utilizados:
+  https://github.com/end-4/dots-hyprland
+- Tema SDDM utilizado:
+  https://github.com/3d3f/ii-sddm-theme
+- Script de pós-instalação utilizado:
+  https://github.com/rafaelsilvamartins30/postinstall-dots-hyprland
+- GRUB themes 2 repo 
+  https://github.com/vinceliuice/grub2-themes
