@@ -1,127 +1,177 @@
-# 📄 CONTEXTO.md — Contexto Obrigatório para Agentes de IA
+# CONTEXTO.MD
 
-> ⚠️ **OBRIGATÓRIO**: Este arquivo deve ser lido antes de qualquer decisão técnica.
-> Sem ele preenchido, **nenhuma sugestão de arquitetura, código ou infra deve ser feita**.
->  
-> Atualize sempre que houver mudança de escopo, estágio ou stack.
+Template de contexto do projeto para agentes de IA.
 
----
+Use este arquivo para dar contexto mínimo suficiente ao agente sem precisar repetir tudo no prompt.
 
-## 1. Identificação do Projeto
-
-- **Nome:**  
-- **Descrição curta:**  
+O objetivo não é criar burocracia. O objetivo é evitar chute técnico, over-engineering e decisões fora da realidade do projeto.
 
 ---
 
-## 2. Estágio Atual
+## 1. Identificação
 
-> Marque **apenas um**. Define o nível de rigor técnico esperado.
-
-- [ ] Teste / Exploração (validar ideia rápido, sem compromisso)
-- [ ] MVP (estrutura mínima para validar com usuários)
-- [ ] Produção (uso real, exige qualidade e estabilidade)
-- [ ] Escalando (alto volume, performance e times múltiplos)
+- **Nome do projeto:**
+- **Descrição curta:**
+- **Tipo de projeto:** pessoal / trabalho / estudo / produto / experimento
 
 ---
 
-## 3. Estágio Final Esperado
+## 2. Objetivo real
 
-> Define o nível de complexidade que pode ser antecipado.
+Explique em poucas linhas o que o projeto precisa resolver agora.
 
-- [ ] Simples / interno (script ou ferramenta pessoal)
-- [ ] SaaS / Web App público
-- [ ] API (interna ou externa)
-- [ ] Sistema escalável / multi-tenant
-- [ ] Indefinido
-
-**Observações:**  
+- **Problema principal:**
+- **Usuário ou público-alvo:**
+- **Resultado esperado no curto prazo:**
 
 ---
 
-## 4. Possíveis Mudanças Futuras
+## 3. Estágio atual
 
-> Liste apenas mudanças **prováveis** (evite especulação inútil).
+Marque apenas um.
 
-| Mudança | Probabilidade | Prazo |
-|---|---|---|
-| | | |
-| | | |
-| | | |
+- [ ] Estudo / teste rápido
+- [ ] Protótipo
+- [ ] MVP pequeno
+- [ ] Produto em crescimento
+- [ ] Produção
+- [ ] Sistema crítico
 
----
+### Implicação técnica
 
-## 5. Ambiente
-
-> Onde o sistema roda.
-
-- **Desenvolvimento:**  
-- **Deploy / Produção:**  
+- **Quanto rigor é necessário agora?**
+- **O que seria over-engineering neste momento?**
+- **O que seria simplificação perigosa neste momento?**
 
 ---
 
-## 6. Objetivos de Negócio
-
-> Direciona decisões técnicas (sem isso, arquitetura vira chute).
-
-- **Curto prazo (semanas):**  
-- **Médio prazo (meses):**  
-
----
-
-## 7. Stack Atual
-
-> Se estiver migrando algo, use:  
-> `[Antigo] -> [Novo]`
+## 4. Stack atual
 
 | Camada | Tecnologia |
 |---|---|
-| Linguagem principal | |
+| Linguagem | |
 | Framework | |
 | Banco de dados | |
-| ORM / Query | |
+| ORM / query builder | |
 | Autenticação | |
-| Fila / Jobs | |
-| Infra / Deploy | |
 | Testes | |
-| Outras libs | |
+| Build / package manager | |
+| Deploy / infra | |
+| Outras libs relevantes | |
 
 ---
 
-## 8. Restrições e Decisões Fixas
+## 5. Como rodar e validar
 
-> O que **não pode ser mudado** ou já foi decidido.
+### Execução
 
--  
--  
--  
+```bash
+# comando para rodar o projeto
+```
+
+### Testes
+
+```bash
+# comando para rodar todos os testes
+```
+
+### Teste específico
+
+```bash
+# comando para rodar teste específico
+```
+
+### Build / lint / typecheck
+
+```bash
+# comandos de validação adicionais
+```
 
 ---
 
-## 9. Histórico de Decisões (Log)
+## 6. Estrutura do projeto
 
-> Nunca apagar. Isso evita decisões incoerentes no futuro.
+Explique apenas as pastas/arquivos importantes.
+
+| Caminho | Responsabilidade |
+|---|---|
+| | |
+| | |
+| | |
+
+---
+
+## 7. Convenções do projeto
+
+- **Nomes:**
+- **Organização de pastas:**
+- **Camadas:**
+- **DTOs / contratos:**
+- **Validação:**
+- **Tratamento de erro:**
+- **Logs:**
+- **Transações:**
+- **Testes:**
+- **Documentação:**
+
+---
+
+## 8. Restrições e decisões fixas
+
+Liste o que não deve ser alterado sem aprovação.
+
+- 
+- 
+- 
+
+---
+
+## 9. Decisões pendentes
+
+Liste decisões que ainda precisam ser tomadas pelo usuário.
+
+| Decisão | Opções conhecidas | Observações |
+|---|---|---|
+| | | |
+| | | |
+
+---
+
+## 10. Mudanças futuras prováveis
+
+Liste apenas mudanças realmente prováveis. Não especule demais.
+
+| Mudança | Probabilidade | Prazo aproximado | Impacto técnico |
+|---|---|---|---|
+| | | | |
+| | | | |
+
+---
+
+## 11. Histórico de decisões
+
+Nunca apagar decisões importantes. Adicione novas linhas.
 
 Formato:
+
+```txt
+[AAAA-MM-DD] - [Decisão] - [Motivo]
 ```
-[Data] - [Decisão] - [Motivo]
+
+Exemplos:
+
+```txt
+2026-05-16 - Usar PostgreSQL - Projeto precisa de consultas relacionais simples e integridade referencial.
+2026-05-16 - Não usar microserviços - Escopo atual não justifica complexidade operacional.
 ```
 
 ---
 
-## 10. Regras para Agentes de IA
+## 12. Instruções específicas para agentes
 
-> Qualquer IA trabalhando neste repositório deve seguir:
-
-- Não assumir contexto ausente  
-- Não inventar requisitos ou decisões  
-- Questionar inconsistências antes de sugerir soluções  
-- Respeitar estágio do projeto (não over-engineer MVP)  
-
----
-
-## 11. Hardware atual
-
-> Qual Hardware estamos:
-
-- Descreve-lo
+- Não assumir contexto ausente.
+- Não alterar arquitetura sem aprovação.
+- Não criar abstrações genéricas sem necessidade real.
+- Trabalhar em etapas pequenas.
+- Sempre validar mudanças relevantes.
+- Atualizar documentação quando mudar comportamento, comando ou decisão técnica.
